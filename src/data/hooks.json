@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "lasso-claude-hooks",
+    "name": "Lasso Claude-Hooks",
+    "description": "Scans tool outputs for 50+ prompt-injection patterns hidden in files, web fetches, and command output, then warns Claude before it acts on them.",
+    "category": "security",
+    "repoUrl": "https://github.com/lasso-security/claude-hooks",
+    "events": ["PostToolUse"],
+    "author": "lasso-security"
+  },
+  {
+    "slug": "claude-code-guardrails",
+    "name": "Claude-Code-Guardrails",
+    "description": "Blocks direct commits, merges, and force-pushes to protected branches, plus automatic checkpointing so a bad edit is never unrecoverable.",
+    "category": "git",
+    "repoUrl": "https://github.com/wangbooth/Claude-Code-Guardrails",
+    "events": ["PreToolUse"],
+    "author": "wangbooth"
+  },
+  {
+    "slug": "claude-format-hook",
+    "name": "claude-format-hook",
+    "description": "Auto-formats every file Claude edits using Biome, Ruff, Prettier, or ktlint, chosen automatically by file type.",
+    "category": "formatting",
+    "repoUrl": "https://github.com/ryanlewis/claude-format-hook",
+    "events": ["PostToolUse"],
+    "author": "ryanlewis"
+  },
+  {
+    "slug": "claude-hooks-code-validation",
+    "name": "claude_hooks",
+    "description": "Validates Python and R code immediately after Claude writes or edits it, catching syntax and style errors before they compound.",
+    "category": "code-quality",
+    "repoUrl": "https://github.com/Secrettestbot/claude_hooks",
+    "events": ["PostToolUse"],
+    "author": "Secrettestbot"
+  },
+  {
+    "slug": "claude-code-hooks-multi-agent-observability",
+    "name": "claude-code-hooks-multi-agent-observability",
+    "description": "Streams every hook event from one or many concurrent Claude Code sessions into a real-time dashboard for monitoring agent behavior.",
+    "category": "observability",
+    "repoUrl": "https://github.com/disler/claude-code-hooks-multi-agent-observability",
+    "events": ["PreToolUse", "PostToolUse", "Notification", "Stop"],
+    "author": "disler"
+  },
+  {
+    "slug": "agents-observe",
+    "name": "agents-observe",
+    "description": "Captures, stores, and visualizes Claude Code hook events live, so you can watch what an agent (or fleet of agents) is doing as it happens.",
+    "category": "observability",
+    "repoUrl": "https://github.com/simple10/agents-observe",
+    "events": ["SessionStart", "Stop"],
+    "author": "simple10"
+  },
+  {
+    "slug": "claude-code-stop-sound",
+    "name": "claude-code-stop-sound",
+    "description": "Plays an audio notification the moment Claude Code finishes a task, so you stop tabbing back in to check.",
+    "category": "notifications",
+    "repoUrl": "https://github.com/alwa97/claude-code-stop-sound",
+    "events": ["Stop"],
+    "author": "alwa97"
+  },
+  {
+    "slug": "claude-sounds",
+    "name": "claude-sounds",
+    "description": "Cross-platform sound notifications for Claude Code's full lifecycle: session start, turn completion, and permission prompts.",
+    "category": "notifications",
+    "repoUrl": "https://github.com/dgilperez/claude-sounds",
+    "events": ["SessionStart", "Stop", "Notification"],
+    "author": "dgilperez"
+  },
+  {
+    "slug": "claude-code-notification",
+    "name": "claude-code-notification",
+    "description": "Native macOS desktop notifications with customizable system sounds whenever Claude needs your attention.",
+    "category": "notifications",
+    "repoUrl": "https://github.com/wyattjoh/claude-code-notification",
+    "events": ["Notification"],
+    "author": "wyattjoh"
+  },
+  {
+    "slug": "claude-remember",
+    "name": "claude-remember",
+    "description": "Gives Claude Code persistent memory across sessions by injecting relevant prior context at session start and after each prompt.",
+    "category": "context",
+    "repoUrl": "https://github.com/Digital-Process-Tools/claude-remember",
+    "events": ["SessionStart", "UserPromptSubmit", "Stop"],
+    "author": "Digital-Process-Tools"
+  },
+  {
+    "slug": "claude-code-hooks-karanb192",
+    "name": "claude-code-hooks",
+    "description": "An installable plugin marketplace of hooks covering safety, cost tracking, observability, and everyday productivity in one place.",
+    "category": "utility",
+    "repoUrl": "https://github.com/karanb192/claude-code-hooks",
+    "events": ["PreToolUse", "PostToolUse"],
+    "author": "karanb192"
+  },
+  {
+    "slug": "claude-code-hooks-mastery",
+    "name": "claude-code-hooks-mastery",
+    "description": "A reference collection of annotated example hooks covering every lifecycle event, built to teach the hooks system end to end.",
+    "category": "utility",
+    "repoUrl": "https://github.com/disler/claude-code-hooks-mastery",
+    "events": ["PreToolUse", "PostToolUse", "SessionStart"],
+    "author": "disler"
+  }
+]
