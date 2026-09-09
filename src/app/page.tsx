@@ -8,7 +8,7 @@ export default function Home() {
         <header className="flex flex-col gap-2">
           <div className="flex items-baseline justify-between gap-4">
             <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-              HookHub Claude App
+              HookHub App
             </h1>
             {/* TODO: point at the real HookHub repo once it has a GitHub remote */}
             <a
