@@ -1,4 +1,5 @@
 import { hooks, CATEGORIES } from "@/data/hooks";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Hero() {
   return (
@@ -15,15 +16,18 @@ export default function Hero() {
             {hooks.length} hooks across {CATEGORIES.length} categories
           </span>
 
-          {/* TODO: point at the real HookHub repo once it has a GitHub remote */}
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50 sm:inline-block"
-          >
-            View on GitHub →
-          </a>
+          <div className="flex items-center gap-4">
+            {/* TODO: point at the real HookHub repo once it has a GitHub remote */}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50 sm:inline-block"
+            >
+              View on GitHub →
+            </a>
+            <ThemeToggle />
+          </div>
         </div>
 
         <div className="flex flex-col gap-4">
