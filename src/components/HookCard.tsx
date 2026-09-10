@@ -53,7 +53,7 @@ export default function HookCard({ hook }: { hook: Hook }) {
         </svg>
       </div>
 
-      <h3 className="w-fit rounded-md bg-zinc-100 px-2 py-1 text-lg font-semibold leading-snug tracking-tight text-zinc-950 transition-colors group-hover:text-zinc-700 dark:bg-zinc-800 dark:text-zinc-50 dark:group-hover:text-zinc-200">
+      <h3 className="text-lg font-semibold leading-snug tracking-tight text-zinc-950 transition-colors group-hover:text-zinc-700 dark:text-zinc-50 dark:group-hover:text-zinc-200">
         {hook.name}
       </h3>
 
